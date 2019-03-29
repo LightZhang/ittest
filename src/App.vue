@@ -3,9 +3,13 @@
     <div class="head">
       <div class="head-top">
         <ul>
-          <li> <img class="login-bg" src="./assets/img/logo-min.png"></li>
+          <li>
+            <img class="login-bg" src="./assets/img/logo-min.png">
+          </li>
 
-          <li> <img class="title-bg" src="./assets/img/title.jpg"> </li>
+          <li>
+            <img class="title-bg" src="./assets/img/title.jpg">
+          </li>
 
           <li class="basic-li">
             <Tag color="warning" class="basic-information">基础资料</Tag>
@@ -22,17 +26,16 @@
         </ul>
         <div class="right-select">
           <div style="width:400px;display: inline-block;">
-
             <Row>
               <Col span="8">
-              <label class="lable-text">套账选择：</label>
+                <label class="lable-text">套账选择：</label>
               </Col>
               <Col span="16">
-              <Select v-model="company">
-                <Option value="上海鑫淳财务管理股份有限公司">上海鑫淳财务管理股份有限公司</Option>
-                <Option value="上海鑫淳财务管理股份有限公司">上海鑫淳财务管理股份有限公司</Option>
-                <Option value="上海鑫淳财务管理股份有限公司">上海鑫淳财务管理股份有限公司</Option>
-              </Select>
+                <Select v-model="company">
+                  <Option value="上海鑫淳财务管理股份有限公司">上海鑫淳财务管理股份有限公司</Option>
+                  <Option value="上海鑫淳财务管理股份有限公司">上海鑫淳财务管理股份有限公司</Option>
+                  <Option value="上海鑫淳财务管理股份有限公司">上海鑫淳财务管理股份有限公司</Option>
+                </Select>
               </Col>
             </Row>
           </div>
@@ -48,24 +51,29 @@
                 <Icon :type="menu.Icon"></Icon>
                 <label>{{menu.Name}}</label>
               </template>
-              <MenuItem class="son-menu-li" :name="sonMenu.Name" v-for="sonMenu in menu.Children" :key="sonMenu.ID">
-              {{sonMenu.Name}}
-              </MenuItem>
+              <MenuItem
+                class="son-menu-li"
+                :name="sonMenu.Name"
+                v-for="sonMenu in menu.Children"
+                :key="sonMenu.ID"
+              >{{sonMenu.Name}}</MenuItem>
             </Submenu>
             <MenuItem v-else :name="menu.Name">
-            <Icon :type="menu.Icon"></Icon>
-            <label>{{menu.Name}}</label>
+              <Icon :type="menu.Icon"></Icon>
+              <label>{{menu.Name}}</label>
             </MenuItem>
           </div>
-
         </Menu>
       </div>
       <div class="content-box">
-        <router-view />
+        <router-view/>
       </div>
     </div>
     <div class="bottom">
-
+      <Row>
+        <Col span="12" style="text-align: left;">用户：<label style="color:blue">admin</label></Col>
+        <Col span="12" style="text-align: right;">版权为上海鑫淳财务管理股份有限公司</Col>
+      </Row>
     </div>
   </div>
 </template>
@@ -82,7 +90,7 @@ export default {
       company: ""
     };
   },
-  created: function () {
+  created: function() {
     this.topMenus = topmenus;
     this.leftMenus = leftmenus;
   }

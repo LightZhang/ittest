@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <Table :columns="columns11" :data="data10" border></Table>
+<AccountVoucher>
+    <h1 class="verify-h1">审核</h1>
+</AccountVoucher>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import AccountVoucher from  '../components/AccountVoucher.vue';
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    AccountVoucher:AccountVoucher
   },
   data() {
 
@@ -135,3 +135,12 @@ export default {
   }
 }
 </script>
+<style lang="less" scoped>
+.verify-h1
+{
+  text-align: right;
+  font-size: 28px !important;
+  padding-right: 50px;
+  font-weight: normal !important;
+}
+</style>

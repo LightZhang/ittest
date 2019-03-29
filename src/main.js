@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import iView from 'iview';
+import './assets/css/base.css';
 import 'iview/dist/styles/iview.css';
 import './assets/css/app.less';
 

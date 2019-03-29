@@ -158,7 +158,7 @@
              "Type": "26",
              "Sort": 0,
              "Children": [],
-             "ID": 26,
+             "ID": 260,
              "CreateDate": "2019-01-11 10:59:57",
              "ModifyDate": "2019-01-11 10:59:57",
              "Remark": "普通用户异�?"
@@ -169,10 +169,10 @@
              "Icon": "md-ribbon",
              "RouteUrl": "smallUser",
              "FilePath": "alarm/smallUser.vue",
-             "Type": "26",
+             "Type": "289",
              "Sort": 0,
              "Children": [],
-             "ID": 26,
+             "ID": 2309,
              "CreateDate": "2019-01-11 10:59:57",
              "ModifyDate": "2019-01-11 10:59:57",
              "Remark": ""

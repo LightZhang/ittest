@@ -1,41 +1,41 @@
 [{
         "key": "1",
         "name": "部门",
-        "icon": ""
+        "icon": "md-ribbon"
     },
     {
         "key": "2",
         "name": "员工",
-        "icon": ""
+        "icon": "md-analytics"
     },
     {
         "key": "3",
         "name": "客户厂商",
-        "icon": ""
+        "icon": "md-aperture"
     },
     {
         "key": "4",
         "name": "仓库库位",
-        "icon": ""
+        "icon": "ios-appstore"
     },
     {
         "key": "5",
         "name": "货品",
-        "icon": ""
+        "icon": "ios-baseball"
     },
     {
         "key": "6",
         "name": "币别",
-        "icon": ""
+        "icon": "ios-beaker"
     },
     {
         "key": "7",
         "name": "企业资料",
-        "icon": ""
+        "icon": "ios-book"
     },
     {
         "key": "8",
         "name": "权限管理",
-        "icon": ""
+        "icon": "md-briefcase"
     }
 ]

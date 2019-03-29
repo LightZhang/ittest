@@ -3,23 +3,21 @@
     <div class="head">
       <div class="head-top">
         <ul>
-          <!-- <li> <img class="login-bg" src="./assets/img/logo-min.png"></li>
+          <li> <img class="login-bg" src="./assets/img/logo-min.png"></li>
 
           <li> <img class="title-bg" src="./assets/img/title.jpg"> </li>
 
           <li class="basic-li">
             <Tag color="warning" class="basic-information">基础资料</Tag>
-          </li> -->
+          </li>
         </ul>
       </div>
 
       <div class="head-bottom">
         <ul class="top-menu">
           <li v-for="menu in topMenus" :key="menu.key">
-            <Card>
-              <Icon :type="menu.Icon"></Icon>
-              <label>{{menu.name}}</label>
-            </Card>
+            <Icon style="font-size:32px;" :type="menu.icon"></Icon>
+            <label>{{menu.name}}</label>
           </li>
         </ul>
         <div class="right-select">
@@ -62,7 +60,9 @@
 
         </Menu>
       </div>
-      <div class="content-box"></div>
+      <div class="content-box">
+        <router-view />
+      </div>
     </div>
     <div class="bottom">
 
